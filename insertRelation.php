@@ -26,9 +26,6 @@ $sql = "insert into userplants(
 
         $result = mysqli_query($con, $sql);
 
-        if ($result) {
-            $id = mysqli_insert_id($con);
-            echo json_encode($id);
-        }
+    http_response_code(200);
 
 ?>
