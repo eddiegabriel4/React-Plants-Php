@@ -12,8 +12,8 @@ $last_name = $data->last_name;
 $email = $data->email;
 $password = $data->password;
 
-$con = mysqli_connect("localhost:3306", "root", "");
-mysqli_select_db($con, "plants");
+$con = mysqli_connect("us-cdbr-east-06.cleardb.net", "bc8c569b541e6e", "6035eb80");
+mysqli_select_db($con, "heroku_fc1cb7b6edc651e");
 
 if ($first_name && $last_name && $email && $password) {
     if (EmailIsAvailable($email, $con)) {

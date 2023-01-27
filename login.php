@@ -5,8 +5,8 @@ header("Access-Control-Allow-Headers: access");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 
-$con = mysqli_connect("localhost:3306", "root", "");
-mysqli_select_db($con, "plants");
+$con = mysqli_connect("us-cdbr-east-06.cleardb.net", "bc8c569b541e6e", "6035eb80");
+mysqli_select_db($con, "heroku_fc1cb7b6edc651e");
 
 $data = json_decode(file_get_contents("php://input"));
 

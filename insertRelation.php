@@ -10,8 +10,8 @@ $data = json_decode(file_get_contents("php://input"));
 $user_id = $data->user_id;
 $plant_id = $data->plant_id;
 
-$con = mysqli_connect("localhost:3306", "root", "");
-mysqli_select_db($con, "plants");
+$con = mysqli_connect("us-cdbr-east-06.cleardb.net", "bc8c569b541e6e", "6035eb80");
+mysqli_select_db($con, "heroku_fc1cb7b6edc651e");
 
 
 $sql = "insert into UserPlants(
