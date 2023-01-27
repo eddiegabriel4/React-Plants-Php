@@ -4,6 +4,7 @@ header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header("Access-Control-Allow-Headers: access");
 header("Content-Type: application/json; charset=UTF-8");
 header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With");
+header("HTTP/1.0 200 OK");
 
 $data = json_decode(file_get_contents("php://input"));
 
@@ -25,7 +26,5 @@ $sql = "insert into userplants(
         )";
 
         $result = mysqli_query($con, $sql);
-
-    http_response_code(200);
 
 ?>
