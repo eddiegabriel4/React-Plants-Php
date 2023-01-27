@@ -14,7 +14,7 @@ $con = mysqli_connect("us-cdbr-east-06.cleardb.net", "bc8c569b541e6e", "6035eb80
 mysqli_select_db($con, "heroku_fc1cb7b6edc651e");
 
 
-$sql = "insert into UserPlants(
+$sql = "insert into userplants(
         UserID,
         PlantID
         )
