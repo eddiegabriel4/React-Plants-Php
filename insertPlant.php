@@ -13,8 +13,7 @@ $family = $data->family;
 $img_url = $data->img_url;
 $date = $data->date;
 
-$con = mysqli_connect("us-cdbr-east-06.cleardb.net", "bc8c569b541e6e", "6035eb80");
-mysqli_select_db($con, "heroku_fc1cb7b6edc651e");
+//secure tokens would go here, sorry you can't see it :(
 
 
 $sql = "insert into actual_plants(
